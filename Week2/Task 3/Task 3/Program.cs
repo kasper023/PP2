@@ -23,14 +23,14 @@ namespace Task_3
             foreach (FileInfo file in files)
             {
                 for (int i = 0; i < lvl; ++i) Console.Write(" ");
-                    Console.WriteLine(file.Name);
+                Console.WriteLine(file.Name);
             }
 
         }
         static void Main(string[] args)
         {
             string s = Console.ReadLine();
-            DirectoryInfo ds = new DirectoryInfo("C:/Users/lenovo/Desktop/check");
+            DirectoryInfo ds = new DirectoryInfo("C:/Users/lenovo/Desktop");
             WalkDirectoryTree(ds, 0);
             //Console.ReadKey(); Console.WriteLine("Press any key to close this window...");
             Console.ReadKey();
